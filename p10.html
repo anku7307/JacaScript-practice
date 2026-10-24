@@ -1,0 +1,71 @@
+
+<script>
+    //  const a= new Promise((resolve,reject)=>{
+    //    if(true){
+    //          resolve();
+    //      }
+    //      else{
+    //         reject();
+    //      }
+    //    });
+    //    a.than(()=>{
+    //      console.log("Resolve Ho gya");
+         
+    //    })
+    //    .than(()=>{
+    //     console.log("Again resolve ho gya");
+        
+    //    })
+    //    .catch(()=>{
+    //       console.log("Reject Ho Gya ");
+          
+    //    });
+   // ----------------------------------------------------------------------------------------------------------------
+    
+    //   const a= new Promise((resolve,reject)=>{
+    //    if(true){
+    //          resolve();
+    //      }
+    //      else{
+    //         reject();
+    //      }
+    //    });
+    //    a.than(()=>{
+    //      console.log("Resolve Ho gya");
+         
+    //    })
+    //    .than(()=>{
+    //     console.log("Again resolve ho gya");
+        
+    //    })
+    //    .catch(()=>{
+    //       console.log("Reject Ho Gya ");
+          
+    //    });
+
+    //----------------------------------------------------------------------------------------------------------
+      const a= new Promise((resolve,reject)=>{
+       if(true){
+             resolve({name:"abc"});
+         }
+         else{
+            reject();
+         }
+       });
+       console.log(a);
+       a.than(()=>{
+         console.log("Resolve Ho gya");
+         
+       })
+       .than(()=>{
+        console.log("Again resolve ho gya");
+        
+       })
+       .catch(()=>{
+          console.log("Reject Ho Gya ");
+          
+       });
+
+
+
+</script>

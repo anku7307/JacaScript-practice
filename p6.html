@@ -1,0 +1,118 @@
+<!--Function:-Function is a block of code which is perfrom a specifuct a task when its invoked
+1. Predefine Function
+ a.console.log() , alert(),prompt() etc.
+2.User Define Function
+ b.Named Function
+  c.Anonymous Function// Fuction expression
+  d. Arrow Function
+  e.callback Function
+  f.constructor Function
+  g. IIFE () Function
+  h.Closure Function
+  i. Heigher order function
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Named Function
+        //ch(); named function hoisting hota hai named function hoisting hota hai or use function se phle intialize kr sakte h.
+    //  function ch(){
+    //     console.log("Hello");
+    //  }
+    //  ch();
+    //  ch();
+
+     //Anonymous Function
+     //a(); ye glt hai kyu ki reference error deta hai isme hiosting nhi hota h ye difference hai named and anonymous me or anonymus me fuction ke bad name nhi dte h ise ek variable me store karte hai like (const a=fuction())
+    //  const a=function(){
+    //     console.log("Hello");
+    //  }
+    //  a();
+
+    //Arrow Function :- shorthand way hota hai kisi function ka  ()=>{}
+    //
+    // (()=>{
+    //     console.log("Arrow Function");
+        
+    // })
+    // ();
+
+    // const a= ()=>{   // Arow function or Anonymus me ek difference hai ki fuction nhi likhna padtha h arrow function me short hand hota hai ye 
+    //     console.log("Arrow Function");
+    // };
+    // a();
+   
+
+    //IIFE Function:- IIFE function  vaha use hota hai jaha turant jarurat ho or vhi khatam ho ya turant bne or vhi call  ho turant
+     //  (function(){
+    //     console.log("IIFE");
+        
+    //  })();
+
+    //constroctor Function
+    // function details(name,email){
+    //     console.log(name,email);
+        
+    // }
+    // details("abc","@gmail.com");
+    // console.log(typeof(details));
+
+    // function details(name,email){
+    //     this.name=name;
+    //     this.eml=email;
+    // }
+    // const a= new details("abc","abc@gmail.com");
+    // console.log(a);
+
+    //Call Back Function 
+    //  const b=()=>{        //call back function
+    //     console.log(("hellow"));
+        
+    //  }
+    //   function fun (a){   // Higher Order Function
+    //     console.log(a);
+    //     a();
+
+    //   }
+    //   fun(b);
+
+    //Closure Function:- closure function o function hota hai jo apne parent ka scope yad rakhta hai.
+      //es function ko apne parent function ke bahar nhi call kr sakte hai
+    // function fun(){
+    //     let a=1;
+    //      function ch(){   // closure function 
+    //         console.log(a);
+    //           a++;
+    //      }
+    //      ch();
+    //      ch();
+    //      ch();
+    // }
+    // fun();
+
+    //call by value 
+    //  function fun(a){
+    //     a=30;
+    //     console.log(a)
+    //  }
+    //  let b= 20;
+    //  console.log(b);
+
+    //call by reference 
+     function fun(a){
+        a.push(50);
+        console.log(a);
+     }
+     let b=[20,30,40]
+      fun(b)
+      console.log(b);
+      
+    </script>
+</body>
+</html>

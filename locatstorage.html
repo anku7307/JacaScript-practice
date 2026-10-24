@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp">
+    <button id="btn">Store</button>
+    <script>
+        
+          btn.addEventListener('click',()=>{
+               let data=document.getElementById('inp').value
+               //localStorage.setItem("name","ankitâ")
+                 let c=JSON.parse(localStorage.getItem("name"))||[];
+                  c.push(data)
+                  console.log(c);
+                  let a=JSON.stringify(c);
+                  localStorage.setItem("name",a);
+          })
+
+        // localStorage.setItem("name","aman")
+        // localStorage.setItem("branch","cse")
+        // let a=localStorage.getItem('name')
+        //  console.log(a);
+        //  //localStorage.removeItem("name")
+        //   localStorage.clear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+let a=10;
+console.log(a);
+for(i=0;i<=1000;i++){
+   console.log(i);
+}
+console.log("helloo");
+
+Project:
+#blog System
+ quize app
+#to-do-list
+ age calculator
+#music player(complete)
+ text speech(complete)
+#voice to text(complete)
+
+
+Asynchronous: Asynchronous programming is way to eecute the javascript code in the non blocking way.
+1.callback;
+2.promises.
+3.async/await.
+4.timing function
+5.event.
+
+<script>
+  function check(){
+     console.log("Hello");
+    }
+  function count(){
+check();
+  console.log(1);
+   }
+   function ch(b){        //heightest order function
+     console.log(b);   
+      b();
+console.log("Hello last Statement");
+  }
+  ch(count)   //callback function
+
+<!---Promise --->
+     const a= new Promise((resolve,reject)=>{
+       if(true){
+             resolve();
+         }
+         else{
+            reject();
+         }
+       });
+       a.than(()=>{
+         console.log("Resolve Ho gya");
+         
+       })
+       .than(()=>{
+        console.log("Again resolve ho gya");
+        
+       })
+       .catch(()=>{
+          console.log("Reject Ho Gya ");
+          
+       });
+
+
+
+Synchronous: Synchronous programming is way to eecute the javascript code in the  blocking way.
